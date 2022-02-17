@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Header from './Header';
+//import logo from './image/logo192.png'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function Footer(){
+    return(
+        <footer>This is a footer element</footer>
+    )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Page(){
+   return(
+   <div>
+        <Header/>
+        <img src="../pic/logo193.png" width="50px"/>
+        <h2>This is h2 tag</h2>
+        <p>This is a paragraph</p>
+        <Footer/>
+    </div>)
+}
+
+ReactDOM.render(<Page/>,document.getElementById("root"))
