@@ -2,6 +2,10 @@ import React from "react";
 
 export default function Navbar() {
     return(
-        <h1>Navbar goes here</h1>
+        <nav>
+            <img src="logo193.png" height="80px"/>
+            <h3>ReactFacts</h3>
+            <h4>React Course - Project 1</h4>
+        </nav>
     )
 }
