@@ -8,7 +8,20 @@ body{
 
 nav{
     height: 100px;
-    background: blueviolet;
     display: flex;
     padding: 20px 36px;
+}
+
+section{
+    padding: 20px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-photo{
+    width: 400px;
+    align-self: center;
 }
