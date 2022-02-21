@@ -3,8 +3,10 @@ import React from "react";
 export default function Joke(props) {
     return(
         <div>
-            <h2>Que: {props.setup}</h2>
-            <h3>Ans: {props.punchline}</h3>
+            {/*props.setup && <h3>Que: {props.setup}</h3>*/}
+            <h3 style={{display: props.setup? "block": "none"}} >Que: {props.setup}</h3>
+            <p>Ans: {props.punchline}</p>
+            <hr/>
         </div>
     )
 }
