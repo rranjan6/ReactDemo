@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    padding: 20px 36px;
+    background-color: blueviolet;
+}
+
+section{
+    padding: 20px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-photo{
+    width: 400px;
+    align-self: center;
+}
+
+.card{
+    width: 175px;
+    font-size: 14px;
+}
+
+.card-image{
+    width: 100%;
+}
+
+.card-stats{
+    display: flex;
+    align-items: center;
+}
+.card-star{
+    height: 12px;
+}
+.gray{
+    color: #918E9B;
+}
+.bold{
+    font-weight: bold;
+}
