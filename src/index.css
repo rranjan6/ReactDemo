@@ -1,51 +1,21 @@
-* {
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0;
-}
-
-nav{
-    height: 100px;
+.header{
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    height: 65px;
     display: flex;
-    padding: 20px 36px;
-    background-color: blueviolet;
-}
-
-section{
     padding: 20px;
+    align-items:center ;
+    color: white;
 }
 
-.hero{
-    display: flex;
-    flex-direction: column;
+.meme-img{
+    height: 100%;
+    margin-right: 6px;
 }
-
-.hero-photo{
-    width: 400px;
-    align-self: center;
+.header-title{
+    font-size: 1.25rem;
+    margin-right: auto;
 }
-
-.card{
-    width: 175px;
-    font-size: 14px;
-}
-
-.card-image{
-    width: 100%;
-}
-
-.card-stats{
-    display: flex;
-    align-items: center;
-}
-.card-star{
-    height: 12px;
-}
-.gray{
-    color: #918E9B;
-}
-.bold{
-    font-weight: bold;
+.header-project{
+    font-size: .75rem;
+    font-weight: 500;
 }
