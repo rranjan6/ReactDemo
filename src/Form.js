@@ -11,7 +11,6 @@ export default function Form() {
         employment: "",
         favColor:""
     })
-    console.log(formData)
 
     function handleChange(event) {
         const {name,value,type,checked} = event.target
@@ -22,8 +21,14 @@ export default function Form() {
             }
         })
     }
+
+    function handleSubmit(event) {
+        event.preventDefault()
+        console.log(formData)
+    }
+
     return(
-        <form>
+        <form onSubmit={handleSubmit}>
 
             <input
                 type="text" 
@@ -124,6 +129,9 @@ export default function Form() {
                 <option value="indigo">Indigo</option>
                 <option value="violet">Violet</option>
             </select>
+
+            <br/><br/>
+            <button>Submit</button>
 
         </form>
     )
