@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form from './Form';
+import App from './App';
 import './index.css';
 ReactDOM.render(
-  <Form/>,
+  <App/>,
   document.getElementById('root')
 );
