@@ -7,7 +7,8 @@ export default function Form() {
         lastName: "",
         email: "",
         comments: "",
-        isFriendly: true
+        isFriendly: true,
+        employment: ""
     })
     console.log(formData)
 
@@ -22,6 +23,7 @@ export default function Form() {
     }
     return(
         <form>
+
             <input
                 type="text" 
                 placeholder="FirstName"
@@ -29,6 +31,7 @@ export default function Form() {
                 name="firstName"
                 value={formData.firstName}
             />
+
             <input
                 type="text" 
                 placeholder="LastName"
@@ -36,6 +39,7 @@ export default function Form() {
                 name="lastName"
                 value={formData.lastName}
             />
+
             <input
                 type="email" 
                 placeholder="Email"
@@ -43,18 +47,62 @@ export default function Form() {
                 name="email"
                 value={formData.email}
             />
+
             <textarea
                 placeholder="Comments"
                 onChange={handleChange}
                 name="comments"
                 value={formData.comments}
             />
+
             <input
+                id="check"
                 type="checkbox"
                 onChange={handleChange}
                 name="isFriendly"
                 checked={formData.isFriendly}
             />
+            <label htmlFor="check">Are you friendly?</label>
+            <br/>
+            <br/>
+
+            <fieldset>
+
+                <legend>Current Employment status</legend>
+
+                <input
+                    type="radio"
+                    name="employment"
+                    id="unemployed"
+                    value="unemployed"
+                    onChange={handleChange}
+                    checked={formData.employment === "unemployed"}
+                />
+                <label htmlFor="unemployed">Unemployed</label>
+                <br/>
+
+                <input
+                    type="radio"
+                    name="employment"
+                    id="part-time"
+                    value="part-time"
+                    onChange={handleChange}
+                    checked={formData.employment === "part-time"}
+                />
+                <label htmlFor="part-time">Part-time</label>
+                <br/>
+
+                <input
+                    type="radio"
+                    name="employment"
+                    id="full-time"
+                    value="full-time"
+                    onChange={handleChange}
+                    checked={formData.employment === "full-time"}
+                />
+                <label htmlFor="full-time">Full-time</label>
+                
+            </fieldset>
         </form>
     )
 }
