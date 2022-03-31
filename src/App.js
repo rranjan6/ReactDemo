@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "./components/Header";
-import Meme from "./components/Meme";
+import ClickCounter from "./ClickCounter";
+import HoverCounter from "./HoverCounter";
 
 export default function App() {
     return(
         <div>
-            <Header />
-            <Meme />
+            <ClickCounter />
+            <HoverCounter/>
         </div>
     )
 }
