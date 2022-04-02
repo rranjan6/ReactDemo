@@ -1,12 +1,10 @@
 import React from "react";
-import ClickCounter from "./ClickCounter";
-import HoverCounter from "./HoverCounter";
+import ClassCounter from "./Components/ClassCounter";
 
 export default function App() {
     return(
         <div>
-            <ClickCounter />
-            <HoverCounter/>
+            <ClassCounter/>
         </div>
     )
 }
