@@ -1,10 +1,10 @@
 import React from "react";
-import ClassCounter from "./Components/ClassCounter";
+import HookCounter from "./Components/HookCounter";
 
 export default function App() {
     return(
         <div>
-            <ClassCounter/>
+            <HookCounter/>
         </div>
     )
 }
